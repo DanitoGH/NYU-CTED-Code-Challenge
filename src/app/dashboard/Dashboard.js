@@ -3,6 +3,10 @@ import { Bar, Doughnut } from 'react-chartjs-2';
 import axios from 'axios';
 import NumberFormat from 'react-number-format';
 import Moment from 'react-moment';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import DataCard from './components/DataCard';
 
 const Dashboard = () =>  {
   
@@ -29,7 +33,10 @@ const Dashboard = () =>  {
     await axios.request(options).then(function (res) {
       setData(res.data[0])
     }).catch(function (error) {
-      console.error(error);
+      toast.error(error.message, {
+        position: "bottom-right",
+        autoClose: 5000
+      });
     });
   }
 
@@ -119,91 +126,34 @@ const Dashboard = () =>  {
   return (
       <div>
         <div className="row">
-          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div className="card">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-9">
-                    <div className="d-flex align-items-center align-self-start">
-                      <h3 className="mb-0">
-                         <NumberFormat value={confirmed} displayType={'text'} thousandSeparator={true} />
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="col-3">
-                    <div className="icon icon-box-primary">
-                      <span className="mdi mdi-account-multiple icon-item"></span>
-                      
-                    </div>
-                  </div>
-                </div>
-                <h6 className="text-muted font-weight-normal">Confirmed Cases</h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div className="card">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-9">
-                    <div className="d-flex align-items-center align-self-start">
-                      <h3 className="mb-0">
-                        <NumberFormat value={recovered} displayType={'text'} thousandSeparator={true} />
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="col-3">
-                    <div className="icon icon-box-success">
-                      <span className="mdi mdi-human-handsup icon-item"></span>
-                    </div>
-                  </div>
-                </div>
-                <h6 className="text-muted font-weight-normal">Recovered</h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div className="card">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-9">
-                    <div className="d-flex align-items-center align-self-start">
-                      <h3 className="mb-0">
-                        <NumberFormat value={critical} displayType={'text'} thousandSeparator={true} />
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="col-3">
-                    <div className="icon icon-box-warning">
-                      <span className="mdi mdi-hotel icon-item"></span>
-                    </div>
-                  </div>
-                </div>
-                <h6 className="text-muted font-weight-normal">Critical</h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div className="card">
-              <div className="card-body">
-                <div className="row">
-                  <div className="col-9">
-                    <div className="d-flex align-items-center align-self-start">
-                      <h3 className="mb-0">
-                        <NumberFormat value={deaths} displayType={'text'} thousandSeparator={true} />
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="col-3">
-                    <div className="icon icon-box-danger">
-                      <span className="mdi mdi-hospital icon-item"></span>
-                    </div>
-                  </div>
-                </div>
-                <h6 className="text-muted font-weight-normal">Deaths</h6>
-              </div>
-            </div>
-          </div>
+         { /** Confirmed Cases Card */}
+         <DataCard
+            category="Confirmed Cases"
+            data={confirmed}
+            icon="mdi mdi-account-multiple icon-item"
+            iconColor="icon icon-box-primary"
+         />
+         { /** Recovered Cases Card */}
+         <DataCard
+            category="Recovered"
+            data={recovered}
+            icon="mdi mdi-human-handsup icon-item"
+            iconColor="icon icon-box-success"
+         />
+         { /** Critical Cases Card */}
+         <DataCard
+            category="Critical"
+            data={critical}
+            icon="mdi mdi-hotel icon-item"
+            iconColor="icon icon-box-warning"
+         />
+        { /** Deaths Card */}
+         <DataCard
+            category="Deaths"
+            data={deaths}
+            icon="mdi mdi-hospital icon-item"
+            iconColor="icon icon-box-danger"
+         />
         </div>
         <div className="row">
           <div className="col-md-4 grid-margin stretch-card">
@@ -221,7 +171,7 @@ const Dashboard = () =>  {
                 </div>  
                 <div className="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                   <div className="text-md-center text-xl-left">
-                    <h6 className="mb-1">Last Changed</h6>
+                    <h6 className="mb-1">Data Last Changed</h6>
                     <p className="text-muted mb-0">
                       <Moment format="DD MMM YYYY, hh:mm A">{lastChange}</Moment>
                     </p>
@@ -229,7 +179,7 @@ const Dashboard = () =>  {
                 </div>
                 <div className="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                   <div className="text-md-center text-xl-left">
-                    <h6 className="mb-1">Last Update</h6>
+                    <h6 className="mb-1">Data Last Update</h6>
                     <p className="text-muted mb-0">
                       <Moment format="DD MMM YYYY, hh:mm A">{lastUpdate}</Moment>
                     </p>
@@ -256,6 +206,7 @@ const Dashboard = () =>  {
             </div>
           </div>
         </div>
+       <ToastContainer />
       </div> 
     );
 }
