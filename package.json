@@ -1,7 +1,7 @@
 {
   "name": "NYU_CTED_CODE_CHALLENGE",
   "version": "1.1.0",
-  "homepage": "https://danitogh.github.io/NYU-CTED-Code-Challenge",
+  "homepage": "https://danitogh.github.io//NYU-CTED-Code-Challenge",
   "private": true,
   "dependencies": {
     "@mdi/font": "^4.2.95",
