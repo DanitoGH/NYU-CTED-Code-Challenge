@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 // Import Dashboard Component
 import Dashboard from './dashboard/Dashboard';
@@ -10,7 +10,7 @@ const App = () =>  {
       <Router>
           <div className="content-wrapper">
             <Switch>
-               <Route path="https://danitogh.github.io/NYU-CTED-Code-Challenge/" component={Dashboard} />
+               <Route path="/" component={Dashboard} />
            </Switch>
           </div>
      </Router>
