@@ -41,8 +41,8 @@
 # STEP 5
 # Once the installation is complete, please create a .env file in the root directory of the project structure and add the environment variables below:
 
-REACT_APP_RAPID_API_HOST = 'Place Rapid Api Host Url Here'
-REACT_APP_RAPID_API_KEY = 'Place your Rapid Api API_KEY Here'
+REACT_APP_RAPID_API_HOST = 'Place Rapid Api Host Url here'
+REACT_APP_RAPID_API_KEY = 'Place your Rapid Api API_KEY here'
 
 # STEP 6
 #To start the development server, please run the code below:

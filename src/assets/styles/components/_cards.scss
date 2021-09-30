@@ -1,5 +1,4 @@
 /* Cards */
-
 .card {
   border-radius: $card-border-radius;
   .card-body {
@@ -13,6 +12,7 @@
     margin-bottom: 1.125rem;
     text-transform: capitalize;
   }
+
   .card-subtitle {
     @extend .text-gray;
     font-weight: normal;
@@ -20,6 +20,7 @@
     margin-bottom: 0.625rem;
   
   }
+  
   .card-description {
     color: $card-description-color;
     font-weight: $font-weight-light;
