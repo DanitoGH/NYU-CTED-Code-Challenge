@@ -207,8 +207,8 @@ const Dashboard = () =>  {
           </div>
         </div>
        <ToastContainer />
-      </div> 
-    );
+     </div> 
+   );
 }
 
 export default Dashboard;
