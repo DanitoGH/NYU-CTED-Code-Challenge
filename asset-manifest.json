@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/NYU-CTED-Code-Challenge/static/css/main.91a25b71.chunk.css",
-    "main.js": "/NYU-CTED-Code-Challenge/static/js/main.45e913a8.chunk.js",
-    "main.js.map": "/NYU-CTED-Code-Challenge/static/js/main.45e913a8.chunk.js.map",
-    "runtime~main.js": "/NYU-CTED-Code-Challenge/static/js/runtime~main.d0281fca.js",
-    "runtime~main.js.map": "/NYU-CTED-Code-Challenge/static/js/runtime~main.d0281fca.js.map",
-    "static/css/2.b8803beb.chunk.css": "/NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css",
-    "static/js/2.97a8a245.chunk.js": "/NYU-CTED-Code-Challenge/static/js/2.97a8a245.chunk.js",
-    "static/js/2.97a8a245.chunk.js.map": "/NYU-CTED-Code-Challenge/static/js/2.97a8a245.chunk.js.map",
-    "index.html": "/NYU-CTED-Code-Challenge/index.html",
-    "precache-manifest.8649eee83fa1ae9d02419dd9e81d85ac.js": "/NYU-CTED-Code-Challenge/precache-manifest.8649eee83fa1ae9d02419dd9e81d85ac.js",
-    "service-worker.js": "/NYU-CTED-Code-Challenge/service-worker.js",
-    "static/css/2.b8803beb.chunk.css.map": "/NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css.map",
-    "static/css/main.91a25b71.chunk.css.map": "/NYU-CTED-Code-Challenge/static/css/main.91a25b71.chunk.css.map",
-    "static/media/App.scss": "/NYU-CTED-Code-Challenge/static/media/materialdesignicons-webfont.f5111234.ttf"
+    "main.css": "//NYU-CTED-Code-Challenge/static/css/main.c87ccef7.chunk.css",
+    "main.js": "//NYU-CTED-Code-Challenge/static/js/main.957b1db6.chunk.js",
+    "main.js.map": "//NYU-CTED-Code-Challenge/static/js/main.957b1db6.chunk.js.map",
+    "runtime~main.js": "//NYU-CTED-Code-Challenge/static/js/runtime~main.9532e890.js",
+    "runtime~main.js.map": "//NYU-CTED-Code-Challenge/static/js/runtime~main.9532e890.js.map",
+    "static/css/2.b8803beb.chunk.css": "//NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css",
+    "static/js/2.2653739e.chunk.js": "//NYU-CTED-Code-Challenge/static/js/2.2653739e.chunk.js",
+    "static/js/2.2653739e.chunk.js.map": "//NYU-CTED-Code-Challenge/static/js/2.2653739e.chunk.js.map",
+    "index.html": "//NYU-CTED-Code-Challenge/index.html",
+    "precache-manifest.5c0807794ff94f0a72fb4f63ab7a2254.js": "//NYU-CTED-Code-Challenge/precache-manifest.5c0807794ff94f0a72fb4f63ab7a2254.js",
+    "service-worker.js": "//NYU-CTED-Code-Challenge/service-worker.js",
+    "static/css/2.b8803beb.chunk.css.map": "//NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css.map",
+    "static/css/main.c87ccef7.chunk.css.map": "//NYU-CTED-Code-Challenge/static/css/main.c87ccef7.chunk.css.map",
+    "static/media/App.scss": "//NYU-CTED-Code-Challenge/static/media/materialdesignicons-webfont.f5111234.ttf"
   }
 }
