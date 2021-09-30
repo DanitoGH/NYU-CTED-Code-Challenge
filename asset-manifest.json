@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/NYU-CTED-Code-Challenge/static/css/main.91a25b71.chunk.css",
+    "main.js": "/NYU-CTED-Code-Challenge/static/js/main.ae198beb.chunk.js",
+    "main.js.map": "/NYU-CTED-Code-Challenge/static/js/main.ae198beb.chunk.js.map",
+    "runtime~main.js": "/NYU-CTED-Code-Challenge/static/js/runtime~main.d0281fca.js",
+    "runtime~main.js.map": "/NYU-CTED-Code-Challenge/static/js/runtime~main.d0281fca.js.map",
+    "static/css/2.b8803beb.chunk.css": "/NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css",
+    "static/js/2.97a8a245.chunk.js": "/NYU-CTED-Code-Challenge/static/js/2.97a8a245.chunk.js",
+    "static/js/2.97a8a245.chunk.js.map": "/NYU-CTED-Code-Challenge/static/js/2.97a8a245.chunk.js.map",
+    "index.html": "/NYU-CTED-Code-Challenge/index.html",
+    "precache-manifest.5c940edfd9843447c853fdec628a4b04.js": "/NYU-CTED-Code-Challenge/precache-manifest.5c940edfd9843447c853fdec628a4b04.js",
+    "service-worker.js": "/NYU-CTED-Code-Challenge/service-worker.js",
+    "static/css/2.b8803beb.chunk.css.map": "/NYU-CTED-Code-Challenge/static/css/2.b8803beb.chunk.css.map",
+    "static/css/main.91a25b71.chunk.css.map": "/NYU-CTED-Code-Challenge/static/css/main.91a25b71.chunk.css.map",
+    "static/media/App.scss": "/NYU-CTED-Code-Challenge/static/media/materialdesignicons-webfont.f5111234.ttf"
+  }
+}
