@@ -10,8 +10,8 @@ const App = () =>  {
       <Router>
           <div className="content-wrapper">
             <Switch>
-               <Route exact path="/" component={ Dashboard } />
-            </Switch>
+               <Route path="https://danitogh.github.io/NYU-CTED-Code-Challenge/" component={Dashboard} />
+           </Switch>
           </div>
      </Router>
    )
