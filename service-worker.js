@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NYU-CTED-Code-Challenge/precache-manifest.5c940edfd9843447c853fdec628a4b04.js"
+  "/NYU-CTED-Code-Challenge/precache-manifest.f17eb8b0a59d36d1a1a1fc066321ae68.js"
 );
 
 self.addEventListener('message', (event) => {
